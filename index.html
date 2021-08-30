@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Task Manager</title>
+    <style>
+        .my-form{
+            width:70%
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <h1 class="page-header text-center"><span class="text-primary">Schedule</span> Manager <i class="fas fa-sticky-note text-primary"></i></h1>
+
+    <form class="my-form">
+        <div class="form-group">
+        <h2>Task:</h2>
+        <input type="text" id="input" class="name form-control">
+        </div>
+
+        <div class="form-group">
+        <h2>Start On:</h2>
+        <input type="text" id="input" class="entry form-control">
+        </div>
+
+        <div class="form-group">
+        <h2>Complete By:</h2>
+        <input type="text" id="input" class="complete form-control">
+        </div>
+
+        <div class="primary-btn">
+            <button type="submit" class="addtask btn-primary btn-lg">Add Task</button>
+        </div>
+    </form>
+
+    <br>
+
+        <table id="add" class="table table-striped table-hover table-bordered">
+            <tr>
+                <th>Task</th>
+                <th>Start On</th>
+                <th>Complete By</th>
+                <th>Remove</th>
+            </tr>
+            <tr>
+                <td>Fix Bug</td>
+                <td>Monday</td>
+                <td>Wednesday</td>
+                <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+            </tr>
+            <tr>
+                <td>Deploy App</td>
+                <td>Thursday</td>
+                <td>Friday</td>
+                <td><a href="#" class="btn btn-danger btn-sm delete">X</a></td>
+            </tr>
+            <tbody class="tasklist">
+
+            </tbody>
+        </table>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
